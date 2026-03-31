@@ -25,7 +25,7 @@ void Loader::LoadScene(std::vector<Renderable>& scene)
     std::vector<unsigned int> indices;
 
     // Use proper .obj file
-    loadOBJ("airplane.obj", vertices, indices);
+    loadOBJ("assets/models/airplane.obj", vertices, indices);
 
     Mesh* planeMesh = new Mesh(vertices, indices, indices.size());
 
