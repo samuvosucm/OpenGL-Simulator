@@ -15,13 +15,14 @@
 
 
 #include <glad/glad.h>
+#define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 #include <glm/gtc/matrix_transform.hpp>
 
-#include "Engine.h"
+#include "simulator/core/Engine.h"
 
-#include "Application.h"
-#include "Input.h"
+#include "simulator/core/Application.h"
+#include "simulator/core/Input.h"
 
 #include <iostream>
 
@@ -54,6 +55,10 @@ Application::Application()
 	}
 	glfwMakeContextCurrent(window);
 
+	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+		std::cout << "Failed to initialize GLAD\n";
+		return; // or handle error
+	}
 
 	// We give glfw pointer to this Application instance
 	glfwSetWindowUserPointer(window, this);

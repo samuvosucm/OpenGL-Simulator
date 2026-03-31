@@ -12,8 +12,8 @@
  * limitations under the License.
  */
 
-#include "Engine.h"
-#include "Renderer.h"
+#include "simulator/core/Engine.h"
+#include "simulator/graphics/Renderer.h"
 
 
 #pragma once

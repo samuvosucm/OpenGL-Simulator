@@ -182,6 +182,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{E4E2BEDF-D113-3CFE-9005-2576CF4183B6}</Project>
       <Name>glfw</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-build\glm\glm.vcxproj">
+      <Project>{06E5DF74-F62F-3AE2-834A-DF93768AC108}</Project>
+      <Name>glm</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\simulator.vcxproj">
       <Project>{8105D485-D62B-396A-AF45-090445AEE58C}</Project>
       <Name>simulator</Name>

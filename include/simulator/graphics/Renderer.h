@@ -14,11 +14,11 @@
 
 #pragma once
 
-#include "VAO.h"
-#include "VBO.h"
-#include "EBO.h"
-#include "ShaderProgram.h"
-#include "Renderable.h"
+#include "simulator/graphics/VAO.h"
+#include "simulator/graphics/VBO.h"
+#include "simulator/graphics/EBO.h"
+#include "simulator/graphics/ShaderProgram.h"
+#include "simulator/scene/Renderable.h"
 
 #include <string>
 #include <vector>

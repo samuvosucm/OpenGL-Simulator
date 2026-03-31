@@ -12,42 +12,40 @@
  * limitations under the License.
  */
 
-
-#include "Renderer.h"
-#include "Loader.h"
-#include "Simulation.h"
-#include "Camera.h"
-
 #pragma once
 
+#include <vector>
+
+#define GLFW_INCLUDE_NONE
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+
+#include "simulator/graphics/Renderer.h"
+#include "simulator/io/Loader.h"
+#include "simulator/sim/Simulation.h"
+#include "simulator/scene/Camera.h"
+#include "simulator/scene/Renderable.h" // if you store std::vector<Renderable>
 
 class Application {
 public:
-	Application();
+    Application();
 
-	void Run(Engine engine);
-	void Setup(Engine engine);
-	void Terminate();
+    void Run(Engine engine);
+    void Setup(Engine engine);
+    void Terminate();
 
-	GLFWwindow* window;
+    GLFWwindow* window = nullptr;
 
-	float time;
+    float time = 0.0f;
 
-	Engine engine;
+    Engine engine;
 
-	Simulation sim;
-	Renderer renderer;
-	std::vector<Renderable> scene;
-	Camera camera;
-	Loader loader;
+    Simulation sim;
+    Renderer renderer;
+    std::vector<Renderable> scene;
+    Camera camera;
+    Loader loader;
 
-
-
-	// temporary, until camera class is created
-	glm::mat4 worldView;
-	glm::mat4 viewProj;
-
+    glm::mat4 worldView{};
+    glm::mat4 viewProj{};
 };
-
-
-

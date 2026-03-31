@@ -30,13 +30,20 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 # -----------------------------
 include(FetchContent)
 
+# GLM (header-only, via FetchContent)
+FetchContent_Declare(
+  glm
+  GIT_REPOSITORY https://github.com/g-truc/glm.git
+  GIT_TAG        1.0.1
+)
+FetchContent_MakeAvailable(glm)
+
 # GLFW (from upstream)
 FetchContent_Declare(
   glfw
   GIT_REPOSITORY https://github.com/glfw/glfw.git
   GIT_TAG        3.4
 )
-# Avoid building GLFW extras
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
@@ -85,19 +92,12 @@ add_executable(simulator
 # Your public headers
 target_include_directories(simulator PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${glfw_SOURCE_DIR}/include
 )
-
-# GLM (header-only) + STB (header-only)
-# Put GLM in external/glm (the folder that contains glm/...)
-# Put stb headers in external/stb (the folder containing stb_image.h, etc.)
-target_include_directories(simulator PRIVATE
-  ${CMAKE_CURRENT_SOURCE_DIR}/external/glm
-  ${CMAKE_CURRENT_SOURCE_DIR}/external/stb
-)
-
 target_link_libraries(simulator PRIVATE
   glfw
   glad
+  glm::glm
   OpenGL::GL
 )
 

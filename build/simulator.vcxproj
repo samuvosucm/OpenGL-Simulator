@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -111,10 +111,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GLAD_GL_IMPLEMENTATION;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -134,7 +134,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\Debug\glfw3.lib;lib\Debug\glad.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\Debug\glfw3.lib;lib\Debug\glad.lib;lib\Debug\glm.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -153,7 +153,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -179,10 +179,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLAD_GL_IMPLEMENTATION;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -202,7 +202,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\Release\glfw3.lib;lib\Release\glad.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\Release\glfw3.lib;lib\Release\glad.lib;lib\Release\glm.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -221,7 +221,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -247,10 +247,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLAD_GL_IMPLEMENTATION;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -270,7 +270,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\MinSizeRel\glfw3.lib;lib\MinSizeRel\glad.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\MinSizeRel\glfw3.lib;lib\MinSizeRel\glad.lib;lib\MinSizeRel\glm.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -289,7 +289,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -314,10 +314,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GLAD_GL_IMPLEMENTATION;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glm;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\stb;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-src\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\external\glad\include;C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -337,7 +337,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\RelWithDebInfo\glfw3.lib;lib\RelWithDebInfo\glad.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\RelWithDebInfo\glfw3.lib;lib\RelWithDebInfo\glad.lib;lib\RelWithDebInfo\glm.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
@@ -442,6 +442,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glfw-build\src\glfw.vcxproj">
       <Project>{E4E2BEDF-D113-3CFE-9005-2576CF4183B6}</Project>
       <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\Desktop\Programación\TFG\Simulador\OpenGL-Simulator\build\_deps\glm-build\glm\glm.vcxproj">
+      <Project>{06E5DF74-F62F-3AE2-834A-DF93768AC108}</Project>
+      <Name>glm</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

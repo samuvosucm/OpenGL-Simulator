@@ -14,9 +14,9 @@
 
 #pragma once
 
-#include "VAO.h"
-#include "VBO.h"
-#include "EBO.h"
+#include "simulator/graphics/VAO.h"
+#include "simulator/graphics/VBO.h"
+#include "simulator/graphics/EBO.h"
 
 #include <vector>
 

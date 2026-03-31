@@ -16,7 +16,7 @@
 #include <glad/glad.h>
 #include <glm/gtc/matrix_transform.hpp>
 
-#include "Mesh.h"
+#include "simulator/scene/Mesh.h"
 
 
 class Renderable {
