@@ -55,10 +55,6 @@ Application::Application()
 	}
 	glfwMakeContextCurrent(window);
 
-	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-		std::cout << "Failed to initialize GLAD\n";
-		return; // or handle error
-	}
 
 	// We give glfw pointer to this Application instance
 	glfwSetWindowUserPointer(window, this);
@@ -130,6 +126,11 @@ void Application::Setup(Engine engine)
 
 	renderer.Init();
 	loader.LoadScene(scene);
+
+	std::cout << "Scene objects: " << scene.size() << "\n";
+	for (auto& r : scene) {
+		std::cout << "indexCount=" << r.mesh->indexCount << "\n";
+	}
 }
 
 

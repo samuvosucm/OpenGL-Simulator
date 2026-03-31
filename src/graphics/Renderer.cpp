@@ -28,6 +28,8 @@
 // no need to do that here
 void Renderer::Init()
 {
+	// Now we will activate OpenGL functions with GLAD loader
+	gladLoadGL();
 
 	// TODO: make variables for width and height
 	glViewport(0, 0, 1400, 900);
@@ -71,8 +73,6 @@ void DrawElements(ShaderProgram shaderProgram, std::vector<Renderable> scene)
 	// for each element, the renderer should draw the mesh using the
 	// mesh vao, vbo and ebo i guess
 	// also it should say to the shader programme to set the model matrix
-	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
 	for (Renderable r : scene)
 	{
 		shaderProgram.setM(r.ModelWorld());
@@ -81,6 +81,9 @@ void DrawElements(ShaderProgram shaderProgram, std::vector<Renderable> scene)
 		// the index count is how many indices to draw, mesh should know that
 		// also it should know the draw mode
 		glDrawElements(r.drawingMode, r.mesh->indexCount, GL_UNSIGNED_INT, 0);
+
+		// TODO: put this in another place
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	}
 }
 
